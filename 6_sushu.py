@@ -1,4 +1,9 @@
+# !/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+'''
+输出100以内的所有素数，素数之间以一个空格区分
+'''
 
 def sushu(num):
 	l = [2]

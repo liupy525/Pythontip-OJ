@@ -1,4 +1,11 @@
+# !/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+'''
+我们经常遇到的问题是给你两个数，要你求最大公约数和最小公倍数。
+今天我们反其道而行之，给你两个数a和b，计算出它们分别是哪两个数的最大公约数和最小公倍数。
+输出这两个数，小的在前，大的在后，以空格隔开。若有多组解，输出它们之和最小的那组。
+'''
 
 import sys
 
@@ -65,5 +72,26 @@ def nijie(a, b):
 			k.append([x,y])
 		return k
 
-print nijie(int(sys.argv[1]), int(sys.argv[2]))
+print nijie(2, 28)
+
+# print nijie(int(sys.argv[1]), int(sys.argv[2]))
+
+# 网上某人解法
+# import sys
+# def gcd(a,b):
+#     if a < b:
+#         a,b = b,a
+#     while b:
+#         a,b = b,a%b
+#     return a
+
+# c= b/a+1
+# minv,mina,minb= sys.maxint,0,0
+# for i in range(1,c):
+#     for j in range(i,c):
+#         if gcd(i,j) == 1 and a*i*j == b:
+#             if minv > (a*i+a*j):
+#                 minv,mina,minb = (a*i+a*j),a*i,a*j
+# print '%d %d'%(mina,minb)
+
 

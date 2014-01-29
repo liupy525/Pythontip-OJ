@@ -1,4 +1,9 @@
+# !/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+'''
+给你两个正整数a,b,  输出它们公约数的个数。
+'''
 
 def yueshu(num):
 	l = []
